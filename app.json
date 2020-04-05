@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "HelloWorld",
+    "name": "LedStripController",
     "slug": "led-strip-driver-client",
     "platforms": [
       "ios",
