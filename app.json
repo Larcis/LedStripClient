@@ -14,7 +14,7 @@
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -26,7 +26,13 @@
       "assetExts": ["html", "js"]
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+	  "bundleIdentifier": "com.larcis.ledstripclient",
+      "buildNumber": "1.0.0"
+    },
+	  "android": {
+      "package": "com.larcis.ledstripclient",
+      "versionCode": 1
     }
   }
 }

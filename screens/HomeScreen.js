@@ -54,6 +54,11 @@ export default class HomeScreen extends React.Component {
           satValPickerValue={val}
           onSatValPickerDragMove={this.onSatValPickerChange}
           onSatValPickerPress={this.onSatValPickerChange}
+          huePickerBarHeight={270}
+          huePickerSliderSize={30}
+          satValPickerSize={250}
+          satValPickerSliderSize={30}
+          satValPickerBorderRadius={10}
         />
       </View>
     );
