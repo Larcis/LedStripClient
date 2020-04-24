@@ -4,6 +4,7 @@ import { WebView } from 'react-native-webview';
 import { Asset } from 'expo-asset';
 import * as FileSystem from 'expo-file-system';
 import * as Permissions from 'expo-permissions';
+import {set_mode} from "../constants/utils";
 
 export default class PitchScreen extends React.Component {
   constructor(props) {
@@ -13,6 +14,7 @@ export default class PitchScreen extends React.Component {
     };
   }
   componentWillUnmount(){
+    set_mode("free");
   }
   componentDidMount(){
     try{

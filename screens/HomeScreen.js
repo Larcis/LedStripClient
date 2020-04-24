@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import HsvColorPicker from 'react-native-hsv-color-picker';
 import {hsv2rgb, rgb2text, set_color, get_color} from '../constants/utils.js';
+import {set_mode} from "../constants/utils";
+
 export default class HomeScreen extends React.Component {
   constructor(props) {
     super(props);
@@ -13,6 +15,7 @@ export default class HomeScreen extends React.Component {
     };
     this.onSatValPickerChange = this.onSatValPickerChange.bind(this);
     this.onHuePickerChange = this.onHuePickerChange.bind(this);
+    set_mode("free");
     get_color().then((res) => {
       this.setState({
         rgb: rgb2text(res)})

@@ -3,7 +3,7 @@ import { StyleSheet, View  } from 'react-native';
 import { WebView } from 'react-native-webview';
 import { Asset } from 'expo-asset';
 import * as FileSystem from 'expo-file-system';
-
+import {set_mode} from "../constants/utils";
 export default class PlayerScreen extends React.Component {
   constructor(props) {
     super(props);
@@ -12,6 +12,7 @@ export default class PlayerScreen extends React.Component {
     };
   }
   componentWillUnmount(){
+    set_mode("free");
   }
   componentDidMount(){
     this.download();
