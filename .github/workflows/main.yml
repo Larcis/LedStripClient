@@ -1,6 +1,7 @@
+
+on: push
 jobs:
   Build-for-android:
-    on: push
     runs-on: ubuntu
     steps:
       - uses: actions/checkout@v2
